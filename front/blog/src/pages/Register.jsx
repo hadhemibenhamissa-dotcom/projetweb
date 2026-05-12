@@ -11,7 +11,7 @@ function Register() {
   const navigate = useNavigate();
 
   const register = async (e) => {
-    e.preventDefault(); // 🔥 important pour éviter refresh page
+    e.preventDefault(); 
 
     try {
       const res = await api.post("/register", {
